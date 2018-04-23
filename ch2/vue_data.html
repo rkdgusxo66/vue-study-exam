@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CH2</title>
+    </head>
+    <body>
+        <div id="app">
+            <div>{{myData}}</div>
+            <div>Hidden Data!</div>
+            <button @click="onClick">Alert!</button>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript">
+        const app = new Vue({
+           el: '#app',
+           data: {
+               myData: "My Data!",
+               hiddenData: "KHT"
+           },
+           methods:{
+               onClick:function(){
+                   alert(this.myData);
+                   alert(this.hiddenData);
+               }
+           }
+        });
+    </script>
+</html>

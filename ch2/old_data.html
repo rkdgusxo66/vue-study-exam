@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CH2</title>
+    </head>
+    <body>
+        <div id="my-text">My Data!</div>
+        <div id="my-hidden-data" data-hidden="KHT">Hidden Data!</div>
+        <button id="btn-alert">Alert!</button>
+    </body>
+    <script>
+    (function(){
+        document.getElementById("btn-alert").addEventListener('click',function(){
+            let myData = document.getElementById("my-text").innerText;
+            let hiddenData = document.getElementById("my-hidden-data").getAttribute('data-hidden');
+            alert(myData);
+            alert(hiddenData);
+        });
+    })();
+    </script>
+</html>
