@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CH4</title>
+    </head>
+    <body>
+        <div id='app'>
+            <input type="text" v-model='textInput'/>
+            {{textInput}}
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript">
+        const app = new Vue({
+            el: '#app',
+            data:{
+                textInput:''
+            }
+        })
+    </script>
+    </body>
+</html>

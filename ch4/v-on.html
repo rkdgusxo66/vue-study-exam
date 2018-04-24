@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CH4</title>
+    </head>
+    <body>
+        <div id='app'>
+            <span v-show="isVisible">
+                HelloWorld
+            </span>
+            <button v-on:click="onClick">toggle it!</button>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript">
+        const app = new Vue({
+            el: '#app',
+            data:{
+                isVisible: true
+            },
+            methods:{
+                onClick: function(event){
+                    this.isVisible=!this.isVisible;
+                }
+            }
+        })
+    </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CH4</title>
+    </head>
+    <body>
+        <div id='app'>
+            <div v-for='dumb in dumbs'>
+                {{dumb}}
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript">
+        const app = new Vue({
+            el: '#app',
+            data:{
+                dumbs: ['이상원','한명승','강현태','조정현','한선우']
+            }
+        })
+    </script>
+    </body>
+</html>
